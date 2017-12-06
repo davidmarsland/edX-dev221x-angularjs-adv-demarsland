@@ -1,5 +1,5 @@
 angular.module('app')
-.controller('LabController', [ 
+.controller('labController', [ 
    function () { 
       var vm = this; 
       vm.show = show;
