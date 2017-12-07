@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Search</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <style>
+            .vertical-center {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .user-padding {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body ng-controller="userDisplayController" class="container-fluid">
+        <div class="row row-top-margin row-bottom-margin">
+            <div class="col-md-offset-4 col-md-4">
+                <form ng-submit="executeSearch()">
+                    <button id="searchButton" class="btn btn-default" type="submit">Search Users</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <user-display-directive users="users"></user-display-directive>
+            </div>
+        </div>
+
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/user/display-service.js"></script>
+        <script src="app/user/display-controller.js"></script>
+        <script src="app/user/display-directive.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "mod4lab_nodenpmexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Paul James Millar",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1"
+  }
+}

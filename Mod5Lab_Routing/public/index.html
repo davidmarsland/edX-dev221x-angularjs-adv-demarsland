@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app"> 
+    <head>
+        <title>Configuration and Routing</title>         
+            <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Configuration and Routing</h1>
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/items">Items</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div ng-view></div>
+        </div>
+
+        <script src="/angular/angular.min.js"></script>
+        <script src="/angularroute/angular-route.min.js"></script>
+        <script src="/appcore/app.js"></script>
+        <script src="/appcore/lab-controller.js"></script>
+        <script src="/app/home/home-controller.js"></script>
+        <script src="/app/items/items-controller.js"></script>
+        <script src="/app/contact/contact-controller.js"></script>
+    </body>
+</html>
